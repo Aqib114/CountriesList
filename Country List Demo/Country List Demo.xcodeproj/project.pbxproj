@@ -13,6 +13,14 @@
 		BA3665DD2C7F0E8200CF0AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3665DB2C7F0E8200CF0AEF /* Main.storyboard */; };
 		BA3665DF2C7F0E8500CF0AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3665DE2C7F0E8500CF0AEF /* Assets.xcassets */; };
 		BA3665E22C7F0E8500CF0AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3665E02C7F0E8500CF0AEF /* LaunchScreen.storyboard */; };
+		BADCF1782C7F133D0052942D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF1762C7F133D0052942D /* Country.swift */; };
+		BADCF1792C7F133D0052942D /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF1772C7F133D0052942D /* CountryData.swift */; };
+		BADCF1822C7F134B0052942D /* SelectedCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF17B2C7F134B0052942D /* SelectedCountryCell.swift */; };
+		BADCF1832C7F134B0052942D /* SelectedCountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADCF17C2C7F134B0052942D /* SelectedCountryCell.xib */; };
+		BADCF1852C7F134B0052942D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADCF1802C7F134B0052942D /* CustomTableViewCell.xib */; };
+		BADCF1862C7F134B0052942D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF1812C7F134B0052942D /* CustomTableViewCell.swift */; };
+		BADCF18A2C7F13560052942D /* SelectedCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF1882C7F13560052942D /* SelectedCountriesViewController.swift */; };
+		BADCF18B2C7F13560052942D /* ContriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADCF1892C7F13560052942D /* ContriesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		BA3665DE2C7F0E8500CF0AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3665E12C7F0E8500CF0AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA3665E32C7F0E8500CF0AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADCF1762C7F133D0052942D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BADCF1772C7F133D0052942D /* CountryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		BADCF17B2C7F134B0052942D /* SelectedCountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCountryCell.swift; sourceTree = "<group>"; };
+		BADCF17C2C7F134B0052942D /* SelectedCountryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCountryCell.xib; sourceTree = "<group>"; };
+		BADCF1802C7F134B0052942D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		BADCF1812C7F134B0052942D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		BADCF1882C7F13560052942D /* SelectedCountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCountriesViewController.swift; sourceTree = "<group>"; };
+		BADCF1892C7F13560052942D /* ContriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContriesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,55 @@
 		BA3665D42C7F0E8200CF0AEF /* Country List Demo */ = {
 			isa = PBXGroup;
 			children = (
+				BADCF1872C7F13560052942D /* Controller */,
+				BADCF17A2C7F134B0052942D /* View */,
+				BADCF1752C7F133D0052942D /* Model */,
 				BA3665D52C7F0E8200CF0AEF /* AppDelegate.swift */,
 				BA3665D72C7F0E8200CF0AEF /* SceneDelegate.swift */,
 				BA3665D92C7F0E8200CF0AEF /* ViewController.swift */,
-				BA3665DB2C7F0E8200CF0AEF /* Main.storyboard */,
 				BA3665DE2C7F0E8500CF0AEF /* Assets.xcassets */,
 				BA3665E02C7F0E8500CF0AEF /* LaunchScreen.storyboard */,
 				BA3665E32C7F0E8500CF0AEF /* Info.plist */,
 			);
 			path = "Country List Demo";
+			sourceTree = "<group>";
+		};
+		BADCF1752C7F133D0052942D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BADCF1762C7F133D0052942D /* Country.swift */,
+				BADCF1772C7F133D0052942D /* CountryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BADCF17A2C7F134B0052942D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BADCF17B2C7F134B0052942D /* SelectedCountryCell.swift */,
+				BADCF17C2C7F134B0052942D /* SelectedCountryCell.xib */,
+				BA3665DB2C7F0E8200CF0AEF /* Main.storyboard */,
+				BADCF17F2C7F134B0052942D /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BADCF17F2C7F134B0052942D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BADCF1802C7F134B0052942D /* CustomTableViewCell.xib */,
+				BADCF1812C7F134B0052942D /* CustomTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BADCF1872C7F13560052942D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BADCF1882C7F13560052942D /* SelectedCountriesViewController.swift */,
+				BADCF1892C7F13560052942D /* ContriesListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA3665E22C7F0E8500CF0AEF /* LaunchScreen.storyboard in Resources */,
+				BADCF1852C7F134B0052942D /* CustomTableViewCell.xib in Resources */,
+				BADCF1832C7F134B0052942D /* SelectedCountryCell.xib in Resources */,
 				BA3665DF2C7F0E8500CF0AEF /* Assets.xcassets in Resources */,
 				BA3665DD2C7F0E8200CF0AEF /* Main.storyboard in Resources */,
 			);
@@ -138,7 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADCF1782C7F133D0052942D /* Country.swift in Sources */,
+				BADCF1792C7F133D0052942D /* CountryData.swift in Sources */,
 				BA3665DA2C7F0E8200CF0AEF /* ViewController.swift in Sources */,
+				BADCF1862C7F134B0052942D /* CustomTableViewCell.swift in Sources */,
+				BADCF18A2C7F13560052942D /* SelectedCountriesViewController.swift in Sources */,
+				BADCF18B2C7F13560052942D /* ContriesListViewController.swift in Sources */,
+				BADCF1822C7F134B0052942D /* SelectedCountryCell.swift in Sources */,
 				BA3665D62C7F0E8200CF0AEF /* AppDelegate.swift in Sources */,
 				BA3665D82C7F0E8200CF0AEF /* SceneDelegate.swift in Sources */,
 			);
@@ -300,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
